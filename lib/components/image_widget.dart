@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 Widget imagePickAlert({
-  void Function()? onCameraPressed,
+  void Function()? onPdfPressed,
   void Function()? onGalleryPressed,
 }) {
   return AlertDialog(
@@ -12,11 +12,11 @@ Widget imagePickAlert({
       mainAxisSize: MainAxisSize.min,
       children: [
         ListTile(
-          leading: const Icon(Icons.camera_alt),
+          leading: const Icon(Icons.picture_as_pdf),
           title: const Text(
-            "Camera",
+            "PDF",
           ),
-          onTap: onCameraPressed,
+          onTap: onPdfPressed,
         ),
         ListTile(
           leading: const Icon(Icons.image),
